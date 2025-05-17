@@ -1,0 +1,86 @@
+@font-face {
+    font-family: Cursed Timer ULil;
+    src: url(./fonts/CursedTimerUlil-Aznm.ttf);
+}
+
+:root {
+    --black: #111827;
+    --gray: #1F2937;
+    --navy: #1B244A;
+    --lighter-navy: #9AABD8;
+    --white: #ffffff;
+    --red: #E11D48;
+    --heading-font: 'Inter';
+}
+
+body {
+    margin: 0 auto;
+    background-color: var(--navy);
+    max-width: 1000px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+h3 {
+    font-family: var(--heading-font);
+    color: var(--white);
+    margin: 1rem;
+}
+
+.score-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score {
+    font-family: 'Cursed Timer ULil';
+    background-color: var(--black);
+    color: var(--red);
+    font-size: 48px;
+    height: 50px;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.point-buttons {
+    margin: 1rem;
+    width: 7rem;
+}
+
+.add-points-button {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 12px;
+    font-family: 'Cursed Timer ULil';
+
+    background-color: var(--navy);
+    color: var(--lighter-navy);
+    border: 1px solid var(--lighter-navy);
+    border-radius: 3px;
+}
+
+.add-points-button:hover {
+    background-color: var(--lighter-navy);
+    border: 2px solid var(--black);
+    border-radius: 3px;
+}
+
+.new-game-container {
+    display: flex;
+    justify-content: center;
+}
+
+.new-game-btn {
+    background-color: var(--red);
+    border-radius: 5px;
+    border: 2px solid var(--red);
+    color: var(--navy);
+}
